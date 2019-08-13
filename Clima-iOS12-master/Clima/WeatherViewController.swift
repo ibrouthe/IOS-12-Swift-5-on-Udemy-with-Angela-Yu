@@ -65,7 +65,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate{
                 
             }
             else {
-                print("Theres an error: \(response.result.error)")
+                
                 self.cityLabel.text = "Connection issues"
             }
         }
