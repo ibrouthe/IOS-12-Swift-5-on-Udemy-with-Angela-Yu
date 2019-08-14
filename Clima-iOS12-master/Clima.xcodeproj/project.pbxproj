@@ -52,7 +52,6 @@
 				51A0638DBA111188014F63FD /* Pods-Clima.debug.xcconfig */,
 				30867F729B4AFA71A786642D /* Pods-Clima.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
