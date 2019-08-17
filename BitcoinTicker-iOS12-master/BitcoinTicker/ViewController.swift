@@ -78,7 +78,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
                     print("Sucess! Got the Bitcoin data")
                     let bitcoinPriceJSON : JSON = JSON(response.result.value!)
 
-                    updateBitcoinData(json: bitcoinPriceJSON)
+                    self.updateBitcoinData(json: bitcoinPriceJSON)
 
                 } else {
                     print("Error: \(String(describing: response.result.error))")
