@@ -33,17 +33,18 @@ class RegisterViewController: UIViewController {
 
         
         //TODO: Set up a new user on our Firbase database
-        Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
+        Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) {
+            (user, error) in
+//      user and error are the 2 objects returned by callback
+//      when seeing the keyword "in" you are in a closure (anonymous function)
+            
             if error != nil{
                 print(error!)
             } else{
-                print("registration was succes")
+                print("***    ***   registration was succes    ***    ****")
                 self.performSegue(withIdentifier: "goToChat", sender: self)
             }
         }
-        
-
-        
         
     } 
     
